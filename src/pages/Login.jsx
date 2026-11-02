@@ -1,4 +1,6 @@
 import styles from "./Login.module.css";
+import { useState } from "react";
+import Button from "../components/Button";
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
@@ -27,9 +29,8 @@ export default function Login() {
             value={password}
           />
         </div>
-
         <div>
-          <button>Login</button>
+          <Button type="primary">Login</Button>
         </div>
       </form>
     </main>
