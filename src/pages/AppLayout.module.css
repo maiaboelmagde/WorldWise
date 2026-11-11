@@ -2,3 +2,8 @@
   height: 100vh;
   overscroll-behavior-y: none;
 }
+
+.AuthedLayout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

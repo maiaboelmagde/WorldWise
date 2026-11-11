@@ -8,9 +8,9 @@ import CitiesProvider from '../context/CitiesContext'
 export default function AuthedLayout() {
   return (
     <CitiesProvider>
-      <div className={styles.authedLayout}>
+      <div className={`${styles.app} ${styles.AuthedLayout}`}>
         <Sidebar />
-        <Map/>
+          <Map />
       </div>
     </CitiesProvider>
   )

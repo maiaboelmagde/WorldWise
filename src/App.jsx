@@ -8,8 +8,11 @@ import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import PageNotFound from "./pages/PageNotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+
 
 import { FakeAuthProvider } from "./context/FakeAuthContext";
+import City from "./components/City";
 
 function App() {
   let configRoutes = createBrowserRouter(
@@ -22,17 +25,23 @@ function App() {
           { path: "/login", element: <Login /> },
           { path: "*", element: <PageNotFound /> }]
       },
-      {path: "app", element: <AuthedLayout />, children: [
-        { path: "cities", element: <CityList /> },
-        {path: "countries", element: <CountryList /> }
-      ]},
-      {path: "*", element: <PageNotFound />}
+      {
+        path: "app", element: <AuthedLayout />, children: [
+          { path: "cities", element: <CityList />, },
+          { path: "cities/:id", element: <City /> },
+          { path: "countries", element: <CountryList /> }
+        ]
+      },
+      { path: "*", element: <PageNotFound /> }
     ]
   );
   return (
-    < FakeAuthProvider>
-      <RouterProvider router={configRoutes} />
-    </FakeAuthProvider>
+    <>
+      < FakeAuthProvider>
+        <RouterProvider router={configRoutes} />
+      </FakeAuthProvider>
+      <Toaster position="top-right" />
+    </>
   );
 }
 

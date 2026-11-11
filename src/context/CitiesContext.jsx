@@ -3,6 +3,7 @@ import React, { createContext, useState, useEffect } from 'react';
 const CitiesContext = createContext();
 export default function CitiesProvider({ children }) {
     const [cities, setCities] = useState(null);
+    const [currentCity, setCurrentCity] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function CitiesProvider({ children }) {
   },[]
   );
   return (
-    <CitiesContext.Provider value={{ cities, loading, error }}>
+    <CitiesContext.Provider value={{ cities, loading, error, currentCity, setCurrentCity }}>
       {children}
     </CitiesContext.Provider>
   )
