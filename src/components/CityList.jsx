@@ -4,6 +4,7 @@ import Spinner from './Spinner';
 import CityItem from './CityItem';
 import { useCities } from '../context/CitiesContext';
 import styles from './CityList.module.css';
+import Message from './Message';
 
 export default function CityList() {
   const { cities, loading, error,currentCity, setCurrentCity } = useCities(); // useCities is a custom hook that fetches the cities from the API
@@ -16,7 +17,7 @@ export default function CityList() {
   return (
     <div className={styles.cityList}>
       {loading && <Spinner />}
-      {error && <p>Error: {error.message}</p>}
+      {error && <Message message={`Error: ${error.message}`}/>}
       {!loading && !error && cities && cities.length > 0 && (
         <ul className={styles.cityList}>
           {cities.map((city) => (
@@ -25,7 +26,7 @@ export default function CityList() {
         </ul>
       )}
       {!loading && !error && (!cities || cities.length === 0) && (
-        <p>Add your first city by clicking on a city on the map</p>
+        <Message message= "Add your first city by clicking on a city on the map"/>
       )}
     </div>
   )

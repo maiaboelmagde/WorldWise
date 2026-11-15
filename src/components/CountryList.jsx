@@ -34,7 +34,7 @@ export default function CountryList() {
           </ul>
         )}
         {!loading && !error && (!uniqueCountries || uniqueCountries.length === 0) && (
-          <p>No countries available</p>
+          <Message message= "No countries available"/>
         )}
     </div>
   )

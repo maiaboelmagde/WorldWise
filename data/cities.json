@@ -1,28 +1,148 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "cityName": "Belovskiy Rayon",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-15T14:09:24.692Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": 54.62297813269033,
+        "lng": 86.79585493679231
       },
-      "id": "17806751"
+      "id": "cb3xvRJFb4Q"
+    },
+    {
+      "cityName": "Zalarinskiy Rayon",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-15T14:09:30.537Z",
+      "notes": "",
+      "position": {
+        "lat": 52.93539665862318,
+        "lng": 100.68970717399122
+      },
+      "id": "idzLwvvihF4"
+    },
+    {
+      "cityName": "Veliko Turnovo",
+      "country": "Bulgaria",
+      "emoji": "🇧🇬",
+      "date": "2026-11-15T14:09:37.080Z",
+      "notes": "",
+      "position": {
+        "lat": 42.86791248391533,
+        "lng": 25.626976287538273
+      },
+      "id": "PhSVsdp-yEY"
+    },
+    {
+      "cityName": "Kikinda",
+      "country": "Serbia",
+      "emoji": "🇷🇸",
+      "date": "2026-11-15T14:09:40.005Z",
+      "notes": "",
+      "position": {
+        "lat": 45.85941212790755,
+        "lng": 20.570026330575747
+      },
+      "id": "r8n1L_vwC-g"
+    },
+    {
+      "cityName": "Osternienburger Land",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2026-11-15T14:09:44.211Z",
+      "notes": "",
+      "position": {
+        "lat": 51.80861475198521,
+        "lng": 12.04552111228002
+      },
+      "id": "DP_QZC5H1ag"
+    },
+    {
+      "cityName": "Velesmes-Echevanne",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2026-11-15T14:09:56.185Z",
+      "notes": "My Favorite place :)",
+      "position": {
+        "lat": 47.39834920035926,
+        "lng": 5.707693711430679
+      },
+      "id": "D_F72DCQECY"
+    },
+    {
+      "cityName": "Gorkovskiy Rayon",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-15T15:08:15.158Z",
+      "notes": "",
+      "position": {
+        "lat": 55.45394132943307,
+        "lng": 73.64338789314372
+      },
+      "id": "P6O95UpzBWQ"
+    },
+    {
+      "cityName": "Bradford",
+      "country": "United Kingdom of Great Britain and Northern Ireland",
+      "emoji": "🇬🇧",
+      "date": "2028-02-04T15:15:53.000Z",
+      "notes": "",
+      "position": {
+        "lat": 53.930219863940025,
+        "lng": -1.8110274864428957
+      },
+      "id": "9GIJgNZLPAE"
+    },
+    {
+      "cityName": "Utajarvi",
+      "country": "Finland",
+      "emoji": "🇫🇮",
+      "date": "2026-11-15T15:17:21.267Z",
+      "notes": "",
+      "position": {
+        "lat": 64.9607663214987,
+        "lng": 27.21388611614968
+      },
+      "id": "wJdC0FofeRk"
+    },
+    {
+      "cityName": "Krokom",
+      "country": "Sweden",
+      "emoji": "🇸🇪",
+      "date": "2026-11-15T15:19:14.861Z",
+      "notes": "",
+      "position": {
+        "lat": 63.49957278566866,
+        "lng": 14.169532892526565
+      },
+      "id": "SClm0hEzuOs"
+    },
+    {
+      "cityName": "Ukhta",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-15T15:19:36.107Z",
+      "notes": "",
+      "position": {
+        "lat": 64.32087157990325,
+        "lng": 52.68822089800582
+      },
+      "id": "rW0JlThYWPs"
+    },
+    {
+      "cityName": "Hami Shi",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2026-11-15T15:21:55.908Z",
+      "notes": "",
+      "position": {
+        "lat": 43.13306116240615,
+        "lng": 94.03961332115088
+      },
+      "id": "JB8VJkP-2o0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -34,7 +34,9 @@ export default function CitiesProvider({ children }) {
 
       const data = await res.json();
       setCities((cities) => [...cities, data]);
+      setCurrentCity(data);
       toast.success("City added!");
+
     } catch (err) {
       toast.error("There was an error adding the city");
     } finally {

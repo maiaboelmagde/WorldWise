@@ -30,7 +30,6 @@ export default function Map() {
     const nav = useNavigate();
     useMapEvent('click', (e) => {
       setPosition([e.latlng.lat, e.latlng.lng]);
-      console.log('Map clicked at:', e);
       nav(`/app/form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     });
     return null;
