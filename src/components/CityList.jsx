@@ -10,7 +10,6 @@ export default function CityList() {
   const nav = useNavigate();
 
   const navigateToCity = (city) => {
-    console.log('navigateToCity called with city:', city);
     setCurrentCity(city);
     nav(`/app/cities/${city.id}?${new URLSearchParams({ lat: city.position.lat, lng: city.position.lng }).toString()}`);
   }

@@ -1,6 +1,7 @@
+import { useCities } from '../context/CitiesContext';
 import styles from './CityItem.module.css';
 export default function CityItem({ city, selected, onClick }) {
-    console.log('CityItem rendered', city.cityName, selected);
+    const { deleteCity } = useCities();
     return (
         <>
             <li className={`${styles.cityItem} ${selected ? styles['cityItem--active'] : ''}`} onClick={() => onClick(city)}>
@@ -10,7 +11,10 @@ export default function CityItem({ city, selected, onClick }) {
                 </div>
                 <div className={styles.cityInfoSection}>
                     <span className={styles.date}>({new Date(city.date).toLocaleDateString()})</span>
-                    <button className={styles.deleteBtn}>×</button>
+                    <button className={styles.deleteBtn} onClick={(e) => {
+                        deleteCity(city.id);
+                        e.stopPropagation();
+                    }}>×</button>
                 </div>
             </li>
         </>

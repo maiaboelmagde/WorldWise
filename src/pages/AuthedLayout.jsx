@@ -10,7 +10,7 @@ export default function AuthedLayout() {
     <CitiesProvider>
       <div className={`${styles.app} ${styles.AuthedLayout}`}>
         <Sidebar />
-          <Map />
+        <Map />
       </div>
     </CitiesProvider>
   )

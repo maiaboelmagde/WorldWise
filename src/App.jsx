@@ -6,6 +6,7 @@ import AppLayout from "./pages/AppLayout";
 import AuthedLayout from "./pages/AuthedLayout";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
+import Form from "./components/Form";
 import PageNotFound from "./pages/PageNotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
@@ -29,7 +30,8 @@ function App() {
         path: "app", element: <AuthedLayout />, children: [
           { path: "cities", element: <CityList />, },
           { path: "cities/:id", element: <City /> },
-          { path: "countries", element: <CountryList /> }
+          { path: "countries", element: <CountryList /> },
+          {path:"form", element:<Form />}
         ]
       },
       { path: "*", element: <PageNotFound /> }
