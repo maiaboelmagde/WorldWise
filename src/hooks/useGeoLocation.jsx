@@ -4,12 +4,14 @@ export function useGeolocation() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    const getPosition = () => {
+    const getPosition = (callback) =>{
         setLoading(true);
         navigator.geolocation.getCurrentPosition(
             (pos) => {
-                setPosition(pos);
+                const newPos = { lat: pos?.coords.latitude, lng: pos?.coords.longitude }
+                setPosition(newPos);
                 setLoading(false);
+                callback?.(newPos);
             },
             (err) => {
                 setError(err);
@@ -17,6 +19,5 @@ export function useGeolocation() {
             }
         );
     }
-
-    return { position: { lat: position?.coords.latitude, lng: position?.coords.longitude }, error, loading, getPosition };
+    return { position, error, loading, getPosition };
 }

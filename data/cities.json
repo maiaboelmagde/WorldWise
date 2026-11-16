@@ -1,42 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Belovskiy Rayon",
-      "country": "Russian Federation",
-      "emoji": "🇷🇺",
-      "date": "2026-11-15T14:09:24.692Z",
-      "notes": "",
-      "position": {
-        "lat": 54.62297813269033,
-        "lng": 86.79585493679231
-      },
-      "id": "cb3xvRJFb4Q"
-    },
-    {
-      "cityName": "Zalarinskiy Rayon",
-      "country": "Russian Federation",
-      "emoji": "🇷🇺",
-      "date": "2026-11-15T14:09:30.537Z",
-      "notes": "",
-      "position": {
-        "lat": 52.93539665862318,
-        "lng": 100.68970717399122
-      },
-      "id": "idzLwvvihF4"
-    },
-    {
-      "cityName": "Kikinda",
-      "country": "Serbia",
-      "emoji": "🇷🇸",
-      "date": "2026-11-15T14:09:40.005Z",
-      "notes": "",
-      "position": {
-        "lat": 45.85941212790755,
-        "lng": 20.570026330575747
-      },
-      "id": "r8n1L_vwC-g"
-    },
-    {
       "cityName": "Osternienburger Land",
       "country": "Germany",
       "emoji": "🇩🇪",
@@ -59,30 +23,6 @@
         "lng": 5.707693711430679
       },
       "id": "D_F72DCQECY"
-    },
-    {
-      "cityName": "Gorkovskiy Rayon",
-      "country": "Russian Federation",
-      "emoji": "🇷🇺",
-      "date": "2026-11-15T15:08:15.158Z",
-      "notes": "",
-      "position": {
-        "lat": 55.45394132943307,
-        "lng": 73.64338789314372
-      },
-      "id": "P6O95UpzBWQ"
-    },
-    {
-      "cityName": "Krokom",
-      "country": "Sweden",
-      "emoji": "🇸🇪",
-      "date": "2026-11-15T15:19:14.861Z",
-      "notes": "",
-      "position": {
-        "lat": 63.49957278566866,
-        "lng": 14.169532892526565
-      },
-      "id": "SClm0hEzuOs"
     },
     {
       "cityName": "Ukhta",
@@ -109,28 +49,64 @@
       "id": "JB8VJkP-2o0"
     },
     {
-      "cityName": "Bayanaul",
-      "country": "Kazakhstan",
-      "emoji": "🇰🇿",
-      "date": "2026-11-15T19:44:34.484Z",
+      "cityName": "Tala",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2026-11-16T17:12:56.893Z",
       "notes": "",
       "position": {
-        "lat": 51.590722643120145,
-        "lng": 76.32478821880845
+        "lat": 30.7106649,
+        "lng": 30.8826734
       },
-      "id": "cX-D_qP5Jn4"
+      "id": "kipwzpskNZg"
     },
     {
-      "cityName": "Verkhoyansky District",
-      "country": "Russian Federation",
-      "emoji": "🇷🇺",
-      "date": "2026-11-16T13:07:07.794Z",
+      "cityName": "Aksu",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2026-11-16T17:14:33.679Z",
       "notes": "",
       "position": {
-        "lat": 69.7485511291223,
-        "lng": 136.1841577394625
+        "lat": 52.24125614966341,
+        "lng": 76.32478821880845
       },
-      "id": "lUx31xBpcKA"
+      "id": "NJqOXMHKxNg"
+    },
+    {
+      "cityName": "Tala",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2026-11-16T17:16:25.021Z",
+      "notes": "",
+      "position": {
+        "lat": 30.7106343,
+        "lng": 30.8826687
+      },
+      "id": "cdb05n-4uGg"
+    },
+    {
+      "cityName": "Vani",
+      "country": "Georgia",
+      "emoji": "🇬🇪",
+      "date": "2026-11-16T17:16:42.573Z",
+      "notes": "",
+      "position": {
+        "lat": 42.00032514831623,
+        "lng": 42.620507804836585
+      },
+      "id": "KO7elBq7St8"
+    },
+    {
+      "cityName": "Municipality of the County of Annapolis",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2026-11-16T17:17:01.235Z",
+      "notes": "",
+      "position": {
+        "lat": 44.5278427984555,
+        "lng": -65.04224895041787
+      },
+      "id": "-M8VuNFFVXQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

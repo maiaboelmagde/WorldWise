@@ -3,6 +3,7 @@ import { useCities } from '../context/CitiesContext';
 import Spinner from './Spinner';
 import CountryItem from './CountryItem';
 import {v4 as uuidv4} from 'uuid';
+import Message from './Message';
 
 
 export default function CountryList() {
@@ -23,7 +24,7 @@ export default function CountryList() {
   : [];
 
   return (
-    <div className={styles.countryList}>
+    <div>
         {loading && <Spinner />}
         {error && <p className={styles.error}>{error}</p>}
         {!loading && !error && uniqueCountries && uniqueCountries.length > 0 && (

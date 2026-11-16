@@ -3,9 +3,10 @@ import styles from './Map.module.css';
 import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvent } from 'react-leaflet';
 import Spinner from './Spinner';
 import { useCities } from '../context/CitiesContext';
-import toast from 'react-hot-toast';
 import useURLPosition from '../hooks/useURLPosition';
 import { useNavigate } from 'react-router-dom';
+import Button from './Button';
+import { useGeolocation } from '../hooks/useGeoLocation';
 
 function ChangeCenter({ position }) {
   const map = useMap();
@@ -15,27 +16,30 @@ function ChangeCenter({ position }) {
 
 export default function Map() {
 
-  const [position, setPosition] = useState(null);
   const [lat, lng] = useURLPosition();
-  useEffect(() => {
-    if (lat && lng) {
-      setPosition([lat, lng]);
-    }
-  }, [lat, lng]);
-
-
   const { cities, loading, error } = useCities();
+  const {getPosition } = useGeolocation();
+  const nav = useNavigate();
+
+  const position = lat && lng ? [Number(lat), Number(lng)] : null;
 
   function DetectClick(e) {
-    const nav = useNavigate();
     useMapEvent('click', (e) => {
-      setPosition([e.latlng.lat, e.latlng.lng]);
+      //setPosition([e.latlng.lat, e.latlng.lng]);
       nav(`/app/form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
     });
     return null;
   }
+
+  function DetectGeoLocation() {
+    getPosition((pos)=>{
+      nav(`/app/form?lat=${pos.lat}&lng=${pos.lng}`);
+    });
+  }
+
   return (
     <div className={styles.mapContainer}>
+      <Button onClick={DetectGeoLocation} type="primary" floated='true'> Go to GeoLocation</Button>
       <MapContainer center={position ?? [50, 80]} zoom={5} scrollWheelZoom={false} className={styles.map}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
