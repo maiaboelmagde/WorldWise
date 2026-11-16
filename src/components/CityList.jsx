@@ -17,7 +17,7 @@ export default function CityList() {
   return (
     <div className={styles.cityList}>
       {loading && <Spinner />}
-      {error && <Message message={`Error: ${error.message}`}/>}
+      {error && <Message message={`Error: ${error}`}/>}
       {!loading && !error && cities && cities.length > 0 && (
         <ul className={styles.cityList}>
           {cities.map((city) => (

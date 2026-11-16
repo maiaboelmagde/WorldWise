@@ -37,7 +37,7 @@ function Form() {
   const { createCity } = useCities();
 
   useEffect(() => {
-    if (!lat && !lng) return;
+    if (!lat || !lng) return;
     setIsLoadingGeocoding(true);
     setGeocodingError("");
     fetch(setURLToGetCityName({ lat, lng }))
@@ -78,7 +78,7 @@ function Form() {
     geocodingError ? (
       <Message message={geocodingError} />
     ) : isLoadingGeocoding ? (<Spinner />) : (
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
           <label htmlFor="cityName">City name</label>
           <input
@@ -109,7 +109,7 @@ function Form() {
         </div>
 
         <div className={styles.buttons}>
-          <Button type="primary" onClick={handleSubmit} >Add</Button>
+          <Button type="primary">Add</Button>
           <ButtonBack />
         </div>
       </form>

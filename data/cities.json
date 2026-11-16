@@ -25,18 +25,6 @@
       "id": "idzLwvvihF4"
     },
     {
-      "cityName": "Veliko Turnovo",
-      "country": "Bulgaria",
-      "emoji": "🇧🇬",
-      "date": "2026-11-15T14:09:37.080Z",
-      "notes": "",
-      "position": {
-        "lat": 42.86791248391533,
-        "lng": 25.626976287538273
-      },
-      "id": "PhSVsdp-yEY"
-    },
-    {
       "cityName": "Kikinda",
       "country": "Serbia",
       "emoji": "🇷🇸",
@@ -85,30 +73,6 @@
       "id": "P6O95UpzBWQ"
     },
     {
-      "cityName": "Bradford",
-      "country": "United Kingdom of Great Britain and Northern Ireland",
-      "emoji": "🇬🇧",
-      "date": "2028-02-04T15:15:53.000Z",
-      "notes": "",
-      "position": {
-        "lat": 53.930219863940025,
-        "lng": -1.8110274864428957
-      },
-      "id": "9GIJgNZLPAE"
-    },
-    {
-      "cityName": "Utajarvi",
-      "country": "Finland",
-      "emoji": "🇫🇮",
-      "date": "2026-11-15T15:17:21.267Z",
-      "notes": "",
-      "position": {
-        "lat": 64.9607663214987,
-        "lng": 27.21388611614968
-      },
-      "id": "wJdC0FofeRk"
-    },
-    {
       "cityName": "Krokom",
       "country": "Sweden",
       "emoji": "🇸🇪",
@@ -143,6 +107,30 @@
         "lng": 94.03961332115088
       },
       "id": "JB8VJkP-2o0"
+    },
+    {
+      "cityName": "Bayanaul",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2026-11-15T19:44:34.484Z",
+      "notes": "",
+      "position": {
+        "lat": 51.590722643120145,
+        "lng": 76.32478821880845
+      },
+      "id": "cX-D_qP5Jn4"
+    },
+    {
+      "cityName": "Verkhoyansky District",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-16T13:07:07.794Z",
+      "notes": "",
+      "position": {
+        "lat": 69.7485511291223,
+        "lng": 136.1841577394625
+      },
+      "id": "lUx31xBpcKA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

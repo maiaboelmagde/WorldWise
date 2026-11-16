@@ -51,7 +51,6 @@ export default function Map() {
         {position && <ChangeCenter position={position} />}
         <DetectClick />
       </MapContainer>
-      {error && toast.error("There was an error loading cities")}
       {loading && <Spinner />}
     </div>
   )
