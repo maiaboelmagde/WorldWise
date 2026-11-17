@@ -3,19 +3,21 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import { useAuth } from "../context/FakeAuthContext";
+import toast from "react-hot-toast";
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
 
-  const {login} = useAuth();
+  const {login, userError} = useAuth();
   const nav = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     login(email, password);
-    nav("/app/cities");
+    if(userError) toast.error(userError);
+    else nav("/app/cities");
   };
 
   return (

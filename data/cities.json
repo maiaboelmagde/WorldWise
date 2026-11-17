@@ -49,54 +49,6 @@
       "id": "JB8VJkP-2o0"
     },
     {
-      "cityName": "Tala",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2026-11-16T17:12:56.893Z",
-      "notes": "",
-      "position": {
-        "lat": 30.7106649,
-        "lng": 30.8826734
-      },
-      "id": "kipwzpskNZg"
-    },
-    {
-      "cityName": "Aksu",
-      "country": "Kazakhstan",
-      "emoji": "🇰🇿",
-      "date": "2026-11-16T17:14:33.679Z",
-      "notes": "",
-      "position": {
-        "lat": 52.24125614966341,
-        "lng": 76.32478821880845
-      },
-      "id": "NJqOXMHKxNg"
-    },
-    {
-      "cityName": "Tala",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2026-11-16T17:16:25.021Z",
-      "notes": "",
-      "position": {
-        "lat": 30.7106343,
-        "lng": 30.8826687
-      },
-      "id": "cdb05n-4uGg"
-    },
-    {
-      "cityName": "Vani",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2026-11-16T17:16:42.573Z",
-      "notes": "",
-      "position": {
-        "lat": 42.00032514831623,
-        "lng": 42.620507804836585
-      },
-      "id": "KO7elBq7St8"
-    },
-    {
       "cityName": "Municipality of the County of Annapolis",
       "country": "Canada",
       "emoji": "🇨🇦",
@@ -107,6 +59,18 @@
         "lng": -65.04224895041787
       },
       "id": "-M8VuNFFVXQ"
+    },
+    {
+      "cityName": "Surgutsky District",
+      "country": "Russian Federation",
+      "emoji": "🇷🇺",
+      "date": "2026-11-17T17:25:39.085Z",
+      "notes": "",
+      "position": {
+        "lat": 61.20679804263029,
+        "lng": 73.9252629916687
+      },
+      "id": "M9FHTp-13Eo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
